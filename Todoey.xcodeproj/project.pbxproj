@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C74F22CE201034B600BB6C1D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74F22CD201034B500BB6C1D /* Item.swift */; };
 		C7AB2D151FF88A95002DA64A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AB2D141FF88A95002DA64A /* AppDelegate.swift */; };
 		C7AB2D171FF88A95002DA64A /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AB2D161FF88A95002DA64A /* ToDoListViewController.swift */; };
 		C7AB2D1A1FF88A95002DA64A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7AB2D181FF88A95002DA64A /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C74F22CD201034B500BB6C1D /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		C7AB2D111FF88A95002DA64A /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7AB2D141FF88A95002DA64A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7AB2D161FF88A95002DA64A /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C74F22CF201034C100BB6C1D /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				C74F22CD201034B500BB6C1D /* Item.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		C74F22D0201034DE00BB6C1D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C7AB2D161FF88A95002DA64A /* ToDoListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C74F22D1201034F400BB6C1D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C7AB2D181FF88A95002DA64A /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C74F22D22010350300BB6C1D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7AB2D1D1FF88A95002DA64A /* LaunchScreen.storyboard */,
+				C7AB2D201FF88A95002DA64A /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		C7AB2D081FF88A95002DA64A = {
 			isa = PBXGroup;
 			children = (
@@ -55,11 +90,11 @@
 			isa = PBXGroup;
 			children = (
 				C7AB2D141FF88A95002DA64A /* AppDelegate.swift */,
-				C7AB2D161FF88A95002DA64A /* ToDoListViewController.swift */,
-				C7AB2D181FF88A95002DA64A /* Main.storyboard */,
+				C74F22D0201034DE00BB6C1D /* Controllers */,
+				C74F22D1201034F400BB6C1D /* Views */,
 				C7AB2D1B1FF88A95002DA64A /* Assets.xcassets */,
-				C7AB2D1D1FF88A95002DA64A /* LaunchScreen.storyboard */,
-				C7AB2D201FF88A95002DA64A /* Info.plist */,
+				C74F22D22010350300BB6C1D /* Supporting Files */,
+				C74F22CF201034C100BB6C1D /* Data Model */,
 			);
 			path = Todoey;
 			sourceTree = "<group>";
@@ -137,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7AB2D171FF88A95002DA64A /* ToDoListViewController.swift in Sources */,
+				C74F22CE201034B600BB6C1D /* Item.swift in Sources */,
 				C7AB2D151FF88A95002DA64A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,7 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3D2PJZ5623;
-				INFOPLIST_FILE = Todoey/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Todoey/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stamhill.Todoey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,7 +327,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3D2PJZ5623;
-				INFOPLIST_FILE = Todoey/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Todoey/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stamhill.Todoey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
